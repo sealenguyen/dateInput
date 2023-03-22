@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div>Form Nhập Ngày Tháng Năm </div>
+
+    <script>
+        let dateInput = prompt('inputDate');
+        let monthInput = prompt('inputMonth');
+        let yearInput = prompt('inputYear');
+
+        let yearNumber = parseInt(yearInput);
+        if (isNaN(yearNumber)) {
+            alert('Năm không đúng định dạng số nguyên')
+        }
+        let stringDate = dateInput + '-' + monthInput + '-' + yearInput;
+        alert('Kết quả:' + stringDate);
+    </script>
+</body>
+
+</html>
